@@ -1,4 +1,22 @@
-﻿chcp 1252 
+﻿<#
+.SYNOPSIS
+    This script will send a notification to the user to warn them about the uptime of the machine. This script should be triggered by the RMM when the uptime is too high (depend on admins preference) 
+
+    .DESCRIPTION
+    Made to be run with Tactical RMM. This script should be triggered by the uptime check.
+	Many thanks to damienvanrobaeys for the original script
+
+    .EXAMPLE
+    PS C:> .\Last_Reboot_Notification.ps1
+
+    bash
+    Copy code
+    This example runs the script to send the notification to the user
+
+    .NOTES
+    Version: 1.0
+#>
+chcp 1252 
 $OutputEncoding = [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::Unicode
 $PSDefaultParameterValues['*:Encoding'] = 'Unicode'
 # ***************************************************************************
@@ -8,7 +26,7 @@ $PSDefaultParameterValues['*:Encoding'] = 'Unicode'
 $Header_type = "GIF"
 $URL = "https://raw.githubusercontent.com/damienvanrobaeys/Intune-Proactive-Remediation-scripts/main/Reboot%20warning/reboot.gif"
 $Logo_URL = "https://example.com/logo.png"
-$App_title = "app name"
+$App_title = "app name "
 
 # ***************************************************************************
 # 								Part to fill
