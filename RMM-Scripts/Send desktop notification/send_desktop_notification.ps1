@@ -77,28 +77,6 @@ Add-Type -AssemblyName PresentationCore,PresentationFramework
 chcp 1252 
 $OutputEncoding = [System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::Unicode
 $PSDefaultParameterValues['*:Encoding'] = 'Unicode'
-# ***************************************************************************
-# 								Part to fill
-# ***************************************************************************
-# $Header_URL = "https://raw.githubusercontent.com/damienvanrobaeys/Intune-Proactive-Remediation-scripts/main/Reboot%20warning/reboot.gif"
-# $Logo_URL = "https://smeyers.tech/assets/icons/logo.png"
-# $App_title = "Smeyers.tech Help"
-# # Toast information
-
-# $Header_Title = "Hello"
-# $Header_Subtitles = @("Smeyers.TECH", "from star to cloud")
-# $Header_Attribution = "Test attribution"
-
-# $Body_Texts = @("a","b","c")
-# $Btn_Dissmiss = "Effacer"
-
-
-# $Show_Action_Button = $true # It will add a button to open the Recycle bin
-# $Btn_Action = "OK"
-# $Action_Script = @"
-# Add-Type -AssemblyName PresentationCore,PresentationFramework
-# [System.Windows.MessageBox]::Show("This is a test", "Hello")
-# "@
 
 
 # ***************************************************************************
